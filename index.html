@@ -1,80 +1,120 @@
 <!DOCTYPE html>
-html lang="en">
+<html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="widith=device-widith, initial-scale 1.0>
-     <titile>document</titile>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
 <style>
     body {
-        background-image: url('flower1.jpg');
+        background-image: url(flower1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     div {
         width: 700px;
-        height: 400px;
-        margin: 50px;
+        height: 500px;
         background-color: aliceblue;
         margin-top: 50px;
-        
+
     }
 </style>
-    
+
 <body>
     <center>
         
-        <h1 style="color:  rgb(223, 220,217);">survey FORM</h1>
+            <h1  style="color: rgb(223, 220, 217);">SURVEY FORM</h1>
         <div>
             <h3>let us know how we can improve</h3>
+
             <table>
                 <tr>
-                    <td align="end"></td><label for="">*name:</label></td>
+                    <td align="end"><label for="name">*Name:</label></td>
                     <td><input type="text" id="name" name="name" required placeholder="Enter the name"></td>
                 </tr>
                 <tr>
                     <td align="end"><label>*Email</label></td>
-                    <td><input type="Email" required placeholder="enter your email"><br></td>
-                    </tr>
-                    <tr>
-                    <td align="end"><label for="">*age</label></td>
-                    <td><input type="Email" required placeholder="age"><br></td>
+                    <td><input type="email" required placeholder="Enter your email"><br></td>
+                </tr>
+                <tr>
+                    <td align="end"> <label for="">*Age</label></td>
+                    <td><input type="number" placeholder="Age"><br></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td> <input type="file"><br></td
+                    <td> <input type="file"> <br></td>
                 </tr>
 
                 <tr>
-                    <td align="end"><label>which option best describe your current role</label></td>
-    <select>
-        <option>student</option>
-        <option>Full Time job</option>
-        <option>Full Time Learner</option>
-        <option>Other</option>
-    </select>
+                    <td align="end"><label >Which option best describe your role?</label></td>
 
-  <label>how likely is it that you would recommend this program to a friend</label>
-  <label><input type="radio" name="recommend" required>Definitely</label>
-  <label><input type="radio" name="recommend">maybe</label>
-  <label><input type="radio" name="recommend" >Not sure</label>
+                    <td><select name="" id="">
 
-  <label>what do you like most of here:</label>
-  <select>
-        <option><select an option</option>
-        <option>challenges</option>
-        <option>projects</option>
-    </select>
-    <label>things that should be improved in the future (check all that apply):</label>
-    <label><input type="checkbox"> Front-end projects</label>
-    <label><input type="checkbox"> Back-end projects</label>
-     <label><input type="checkbox"> data visualization</label>
-    <label>any comments or suggestion</label>
-    <textarea placeholder="Enter your comment here.."></textarea>
-    <button type="submit">submit</button>
-   </form>
-  </div>
+
+                            <option value="abc" >student</option>
+                            <option value="dfg" >working</option>
+                            <option value="selected disabled" >--Select an option--</option>
+                        </select></td>
+                </tr>
+
+
+                <tr>
+                    <td align="end"><label >*How likely is that you would recommented this program to a friend?</label></td>
+
+                    <td><input type="radio" name="likely" value="definitly">
+                        <label for="">Definitely</label><br>
+                        <input type="radio" name="likely" value="maybe">
+                        <label for="">Maybe</label><br>
+                        <input type="radio" name="likely" value="not sure">
+                        <label for="">Not sure</label><br>
+                    </td>
+                </tr>
+
+ <tr>
+                    <td align="end"><label >What do you like most</label></td>
+
+                    <td><select name="" id="">
+
+
+                            <option value="nm" >class</option>
+                            <option value="jk" >group</option>
+                            <option value="selected an option" >--Select an option--</option>
+                        </select></td>
+                </tr>
+
+
+                <tr>
+                    <td align="end">
+                        <label >Thing that should be improved in the future check all that apply? </label>
+                    </td>
+                    <td> <input type="checkbox" name="op1" value="op1">
+                        <label for="ckbox">Frond-end project</label><br>
+                        <input type="checkbox" name="op2" value="op2">
+                        <label for="ckbox">Back-end project</label><br>
+                        <input type="checkbox" name="op3" value="op3">
+                        <label for="ckbox">Back-end project</label><br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="end">
+                        <label >Any Comment or Suggestions?</label>
+                    </td>
+                    <td>
+                        <textarea cols="20" rows="5" placeholder="Enter your comment here..."></textarea>
+                    </td>
+                </tr>
+
+
+            </table>
+             <button type="submit">Submit</button><br><br>
+        </div>
+    </center>
+
+
 </body>
+
 </html>
